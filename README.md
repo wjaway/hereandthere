@@ -1,2 +1,2 @@
 # hereandthere
-recommendation application leveraging organic storytellin
+recommendation application leveraging organic storytelling
