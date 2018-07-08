@@ -1,0 +1,105 @@
+
+
+li {
+    list-style: none;
+}
+
+a {
+color: white;
+}
+
+a:hover {
+color: #007BFE;
+}
+
+body {
+   background-color: #FF932A; 
+}
+
+.color {
+     background-color: #FF932A;
+}
+
+.branding {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF932A;
+    padding-top: 10px
+}
+
+.branding img {
+    padding: 0 16px;
+}
+
+.navbar {
+    background-color: #FF932A;
+    color: white;
+}
+
+.avatar {
+    padding-left: 10px;
+}
+
+
+.carousel {
+    border-radius
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FF932A;
+    color: white;
+    padding-top: 10px;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+.form-control {
+    font-size: 1em;
+}
+
+
+
+@media all and (min-width 767px){
+    .navbar-toggler {
+        display: none;
+    }
+}
+
+/*nav bar resizing*/
+@media all and (max-width: 1202px) and (min-width: 992px) { 
+    
+    nav {
+        font-size: .8em;
+        }
+    }
+
+@media all and (max-width: 767px) { /* screen size until 500px */
+    nav {
+        font-size: 1em; /* 0.8x default size */
+        }
+    }
+    footer {
+        font-size: .8em;
+    }
+@media all and (max-width: 575px) {
+    .navbar-brand {
+       justify-content: center;
+    }
+    .carousel {
+        display: none;
+    }
+    
+    footer {
+        display: none;
+    }
+}

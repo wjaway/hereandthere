@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://use.typekit.net/edk5jfk.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <title>Here &amp; There</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="shortcut icon" type="image/png" href="Assets/favicon-16x16.png">
+</head>
+
+<body>
+    <main>
+        <!--nav-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="offset-ml-1 offset-lg-1"> 
+            <div class="center"> 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars fa-2x"></span>    
+            </button>
+            
+            <a class="navbar-brand" href="home.html"><h1>here &amp; there </h1></a>
+<!--            <img src="Assets/useravatar.png" class="avatarmobile img-fluid" alt="profilepic"/>-->
+            </div>
+
+                            
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    
+                    <li>
+                        <a class="nav-link hiding" href="#"><i class="fa fa-search" aria-hidden="true" ></i> <span class="sr-only"></span></a>
+                    </li>
+                    <li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Write a Recommendation</a>
+                    </li>
+                       <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Categories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="#" data-tags="attractions"> Attractions</a>
+                          <a class="dropdown-item" href="#" data-tags="familyfriendly">Family Friendly</a>
+                          <a class="dropdown-item" href="#" data-tags="foodanddrink">Food &amp; Drink</a>
+                        <a class="dropdown-item" href="#" data-tags="nightlife">Night life</a>
+                          <a class="dropdown-item" href="#" data-tags="seasonal">Seasonal</a>
+                          <a class="dropdown-item" href="#" data-tags="shopping">Shopping</a>   
+                        </div>
+                    </li>
+                    </li>
+                       <li class="nav-item">
+                        <a class="nav-link" href="#about">Travel Tips</a>
+                    </li>
+                    </li>
+                       <li class="nav-item">
+                        <a class="nav-link" href="#about">Support</a>
+                    </li>
+                </ul>
+           
+            </div>
+            <img src="Assets/useravatar.png" class="avatar img-fluid" alt="avatarlarge"/>
+        </nav>
+<!--            carousel-->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Assets/Carousel/1.png" class="img-fluid" alt="First slide" >
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/Carousel/2.png" class="img-fluid" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/Carousel/3.png" class="img-fluid" alt="Third slide">
+                </div>
+            </div>
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+        </div>
+        <div id="filters" class="list-group">
+                <a href="#" class="list-group-item list-group-item-action" data-filter="Attractions">
+                    <div>
+                        <span class="fa fa-camera"></span> 
+                        <p>Attractions</p>
+                    </div>    
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action" data-filter="FamilyFriendly">
+                     <div>
+                        <span class="fa fa-child"></span>
+                        <p>Family Friendly</p>
+                    </div>
+                 </a>
+            
+                <a href="#" class="list-group-item list-group-item-action"  data-filter="FoodandDrink">
+                    <div>
+                        <span class="fa fa-cutlery"></span>
+                        <p>Food &amp; Drink</p>
+                    </div>
+                 </a>
+
+                <a href="#" class="list-group-item list-group-item-action"  data-filter="NightLife">
+                    <div>
+                        <span class="fa fa-glass"></span>
+                        <p>Night Life</p>
+                    </div>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action" data-filter="Seasonal">
+                    <div>
+                        <span class="fa fa-sun-o"></span>
+                        <p>Seasonal</p>
+                    </div>
+                </a>
+            
+                <a href="#" class="list-group-item list-group-item-action" data-filter="Shopping">
+                    <div> 
+                        <span class="fa fa-shopping-bag"></span>
+                        <p>Shopping</p>
+                    </div>
+                </a>
+        </div>
+        <div class="feed"> 
+        <div class="col-xs-12 col-sm-12 col-ml-6 col-lg-6 post" data-tags="Seasonal,FamilyFriendly,Attractions">
+            <div> 
+                <div class="line-spacebetween">
+                    <div class="line"> 
+                    <img src="Assets/Post/avatar.png" class="postavatar" alt="avatar"/>
+                    <div>
+                        <h3> Effie Dawson</h3>
+                        <p><span class="fa fa-map-marker icon"></span>Copenhagen, Denmark</p>
+                    </div>
+                    </div>
+                    <img src="Assets/Post/dots.png" class="more" alt="more"/>
+                </div>
+                <img src="Assets/Post/image.png" class="postimg img fluid" alt="image"/>
+                <div class="line-spacebetween">
+                    <div>
+                    <i class="fa fa-heart-o icon" aria-hidden="true"></i>
+                    <i class="fa fa-comment-o icon" aria-hidden="true"></i>
+                    </div>
+                    <i class="fa fa-bookmark-o icon" aria-hidden="true"></i>
+                </div>
+                <p class="postquote">“Nyhavn is absolutely striking, with cute little shops and a vibrant community there all day and night”</p>
+                <div>
+                    <ul> 
+                    <li><span class="postbold">590</span> likes</li>
+                    <li><span class="postbold">Chis Miller</span> Wow this is beautiful! I want to go so badly!</li>
+                    <li><span class="postbold">Sarah Polonski</span> Amazing pictures! I DMed you about trip details</li>
+                    <li class="postcomments">Load more comments</li>
+                    <li class="posttime">30 minutes ago</li>
+                    </ul>
+                </div>
+            </div>
+                <button class="button"><span>See Review</span></button>    
+        </div>
+<!--feed     -->
+        <div class="col-xs-12 col-sm-12 col-ml-12 col-lg-6 post" data-tags="Attractions,Family Friendly,Shopping">
+            <div> 
+                <div class="line-spacebetween title">
+                    <div class="line"> 
+                    <img src="Assets/Post/avatar.png" class="postavatar" alt="avatar"/>
+                    <div>
+                        <h3> Effie Dawson</h3>
+                        <p><span class="fa fa-map-marker icon"></span>New York, New York</p>
+                    </div>
+                    </div>
+                    <img src="Assets/Post/dots.png" class="more" alt="more"/>
+                </div>
+                <img src="Assets/Post/gug.png" class="postimg img fluid" alt="image"/>
+                <div class="line-spacebetween">
+                    <div>
+                    <i class="fa fa-heart-o icon" aria-hidden="true"></i>
+                    <i class="fa fa-comment-o icon" aria-hidden="true"></i>
+                    </div>
+                    <i class="fa fa-bookmark-o icon" aria-hidden="true"></i>
+                </div>
+                <p class="postquote">“The exhibit on Ukioyo paintings form 15th century Japan were absolutely gorgeous. Definitely go!”</p>
+                <div>
+                    <ul> 
+                    <li><span class="postbold">590</span> likes</li>
+                    <li><span class="postbold">Chis Miller</span> Wow this is beautiful! I want to go so badly!</li>
+                    <li><span class="postbold">Sarah Polonski</span> Amazing pictures! I DMed you about trip details</li>
+                    <li class="postcomments">Load more comments</li>
+                    <li class="posttime">30 minutes ago</li>
+                    </ul>
+                </div>
+            </div>
+                <button class="button"><span>See Review</span></button>    
+        </div>
+        <div class="col-xs-12 col-sm-12 col-ml-12 col-lg-6 post" data-tags="FoodandDrink,FamilyFriendly">
+            <div> 
+                <div class="line-spacebetween">
+                    <div class="line"> 
+                    <img src="Assets/Post/avatar.png" class="postavatar" alt="avatar"/>
+                    <div>
+                        <h3> Effie Dawson</h3>
+                        <p><span class="fa fa-map-marker icon"></span>Chicago, Illinois</p>
+                    </div>
+                    </div>
+                    <img src="Assets/Post/dots.png" class="more" alt="more"/>
+                </div>
+                <img src="Assets/Post/pizza.png" class="postimg img fluid" alt="image"/>
+                <div class="line-spacebetween">
+                    <div>
+                    <i class="fa fa-heart-o icon" aria-hidden="true"></i>
+                    <i class="fa fa-comment-o icon" aria-hidden="true"></i>
+                    </div>
+                    <i class="fa fa-bookmark-o icon" aria-hidden="true"></i>
+                </div>
+                <p class="postquote">“The ambiance is hip and the pizza is absolutely amazing! Great late night spot. Drunchies all the way!”</p>
+                <div>
+                    <ul> 
+                    <li><span class="postbold">590</span> likes</li>
+                    <li><span class="postbold">Chis Miller</span> Wow this is beautiful! I want to go so badly!</li>
+                    <li><span class="postbold">Sarah Polonski</span> Amazing pictures! I DMed you about trip details</li>
+                    <li class="postcomments">Load more comments</li>
+                    <li class="posttime">30 minutes ago</li>
+                    </ul>
+                </div>
+            </div>
+                <a href="profile.html"> <button class="button special"><span>See Review</span></button> </a>  
+        </div>
+        <div class="col-xs-12 col-sm-12 col-ml-12 col-lg-6 post" data-tags="FoodandDrink">
+            <div> 
+                <div class="line-spacebetween">
+                    <div class="line"> 
+                    <img src="Assets/Post/avatar.png" class="postavatar" alt="avatar"/>
+                    <div>
+                        <h3> Effie Dawson</h3>
+                        <p><span class="fa fa-map-marker icon"></span>Chicago, Illinois</p>
+                    </div>
+                    </div>
+                    <img src="Assets/Post/dots.png" class="more" alt="more"/>
+                </div>
+                <img src="Assets/Post/purplepig.png" class="postimg img fluid" alt="image"/>
+                <div class="line-spacebetween">
+                    <div>
+                    <i class="fa fa-heart-o icon" aria-hidden="true"></i>
+                    <i class="fa fa-comment-o icon" aria-hidden="true"></i>
+                    </div>
+                    <i class="fa fa-bookmark-o icon" aria-hidden="true"></i>
+                </div>
+                <p class="postquote">“The tapas is phenomenal, could not have asked for any better! The braised octupus was a stand out”</p>
+                <div>
+                    <ul> 
+                    <li><span class="postbold">590</span> likes</li>
+                    <li><span class="postbold">Chis Miller</span> Wow this is beautiful! I want to go so badly!</li>
+                    <li><span class="postbold">Sarah Polonski</span> Amazing pictures! I DMed you about trip details</li>
+                    <li class="postcomments">Load more comments</li>
+                    <li class="posttime">30 minutes ago</li>
+                    </ul>
+                </div>
+            </div>
+                <button class="button"><span>See Review</span></button>    
+        </div>
+        <div class="col-xs-12 col-sm-12 col-ml-12 col-lg-6 post" data-tags="FoodandDrink,FamilyFriendly">
+            <div> 
+                <div class="line-spacebetween">
+                    <div class="line"> 
+                    <img src="Assets/Post/avatar.png" class="postavatar" alt="avatar"/>
+                    <div>
+                        <h3> Effie Dawson</h3>
+                        <p><span class="fa fa-map-marker icon"></span>New York, USA</p>
+                    </div>
+                    </div>
+                    <img src="Assets/Post/dots.png" class="more" alt="more"/>
+                </div>
+                <img src="Assets/Post/greatsea.png" class="postimg img fluid" alt="image"/>
+                <div class="line-spacebetween">
+                    <div>
+                    <i class="fa fa-heart-o icon" aria-hidden="true"></i>
+                    <i class="fa fa-comment-o icon" aria-hidden="true"></i>
+                    </div>
+                    <i class="fa fa-bookmark-o icon" aria-hidden="true"></i>
+                </div>
+                <p class="postquote">“Their pork and shrimp dumplings are to die for!”</p>
+                <div>
+                    <ul> 
+                    <li><span class="postbold">590</span> likes</li>
+                    <li><span class="postbold">Chis Miller</span> Wow this is beautiful! I want to go so badly!</li>
+                    <li><span class="postbold">Sarah Polonski</span> Amazing pictures! I DMed you about trip details</li>
+                    <li class="postcomments">Load more comments</li>
+                    <li class="posttime">30 minutes ago</li>
+                    </ul>
+                </div>
+            </div>
+                <button class="button"><span>See Review</span></button>    
+        </div>
+        <div class="col-xs-12 col-sm-12 col-ml-12 col-lg-6 post" data-tags="FoodandDrink,FamilyFriendly">
+            <div> 
+                <div class="line-spacebetween">
+                    <div class="line"> 
+                    <img src="Assets/Post/avatar.png" class="postavatar" alt="avatar"/>
+                    <div>
+                        <h3> Effie Dawson</h3>
+                        <p><span class="fa fa-map-marker icon"></span>New York, USA</p>
+                    </div>
+                    </div>
+                    <img src="Assets/Post/dots.png" class="more" alt="more"/>
+                </div>
+                <img src="Assets/Post/icecream.png" class="postimg img fluid" alt="image"/>
+                <div class="line-spacebetween">
+                    <div>
+                    <i class="fa fa-heart-o icon" aria-hidden="true"></i>
+                    <i class="fa fa-comment-o icon" aria-hidden="true"></i>
+                    </div>
+                    <i class="fa fa-bookmark-o icon" aria-hidden="true"></i>
+                </div>
+                <p class="postquote">“Holy shit their ice cream is good. Period”</p>
+                <div>
+                    <ul> 
+                    <li><span class="postbold">590</span> likes</li>
+                    <li><span class="postbold">Chis Miller</span> Wow this is beautiful! I want to go so badly!</li>
+                    <li><span class="postbold">Sarah Polonski</span> Amazing pictures! I DMed you about trip details</li>
+                    <li class="postcomments">Load more comments</li>
+                    <li class="posttime">30 minutes ago</li>
+                    </ul>
+                </div>
+            </div>
+                <button class="button"><span>See Review</span></button>    
+        </div>
+        <div class="col-xs-12 col-sm-12 col-ml-12 col-lg-6 post" data-tags="Seasonal,Shopping,FamilyFriendly">
+            <div> 
+                <div class="line-spacebetween">
+                    <div class="line"> 
+                    <img src="Assets/Post/avatar.png" class="postavatar" alt="avatar"/>
+                    <div>
+                        <h3> Lexi Miller</h3>
+                        <p><span class="fa fa-map-marker icon"></span>New York, New York</p>
+                    </div>
+                    </div>
+                    <img src="Assets/Post/dots.png" class="more" alt="more"/>
+                </div>
+                <img src="Assets/Post/unionsquare.png" class="postimg img fluid" alt="image"/>
+                <div class="line-spacebetween">
+                    <div>
+                    <i class="fa fa-heart-o icon" aria-hidden="true"></i>
+                    <i class="fa fa-comment-o icon" aria-hidden="true"></i>
+                    </div>
+                    <i class="fa fa-bookmark-o icon" aria-hidden="true"></i>
+                </div>
+                <p class="postquote">“So many cute little shops that sell great holiday gifts. Great place to find something for your bf/gf”</p>
+                <div>
+                    <ul> 
+                    <li><span class="postbold">123</span> likes</li>
+                    <li><span class="postbold">Chis Miller</span> Wow this is beautiful! I want to go so badly!</li>
+                    <li><span class="postbold">Sarah Polonski</span> Amazing pictures! I DMed you about trip details</li>
+                    <li class="postcomments">Load more comments</li>
+                    <li class="posttime">30 minutes ago</li>
+                    </ul>
+                </div>
+            </div>
+                <button class="button"><span>See Review</span></button>    
+        </div>
+        <div class="col-xs-12 col-sm-12 col-ml-12 col-lg-6 post" data-tags="NightLife">
+            <div> 
+                <div class="line-spacebetween">
+                    <div class="line"> 
+                    <img src="Assets/Post/avatar.png" class="postavatar" alt="avatar"/>
+                    <div>
+                        <h3> Effie Dawson</h3>
+                        <p><span class="fa fa-map-marker icon"></span>San Francisco, California</p>
+                    </div>
+                    </div>
+                    <img src="Assets/Post/dots.png" class="more" alt="more"/>
+                </div>
+                <img src="Assets/Post/bootie.png" class="postimg img fluid" alt="image"/>
+                <div class="line-spacebetween">
+                    <div>
+                    <i class="fa fa-heart-o icon" aria-hidden="true"></i>
+                    <i class="fa fa-comment-o icon" aria-hidden="true"></i>
+                    </div>
+                    <i class="fa fa-bookmark-o icon" aria-hidden="true"></i>
+                </div>
+                <p class="postquote">“This places is bangin! Make sure to put yourself on the list beforehand to skip the line!”</p>
+                <div>
+                    <ul> 
+                    <li><span class="postbold">590</span> likes</li>
+                    <li><span class="postbold">Chis Miller</span> Wow this is beautiful! I want to go so badly!</li>
+                    <li><span class="postbold">Sarah Polonski</span> Amazing pictures! I DMed you about trip details</li>
+                    <li class="postcomments">Load more comments</li>
+                    <li class="posttime">30 minutes ago</li>
+                    </ul>
+                </div>
+            </div>
+                <button class="button"><span>See Review</span></button>    
+        </div>
+        </div>
+
+    
+
+<!--        footer-->
+        <footer>
+        <div>
+            <ul><span class="bold">About</span> 
+                <li>Our Story</li>
+                <li>Terms of Use</li>
+                <li>Privacy Policy</li>
+                <li>Location</li>
+            </ul>
+        </div>
+
+        <div>
+            <ul><span class="bold"> Discover </span> 
+                <li>H &amp; T blog</li>
+                <li>Destinations</li>
+                <li>Travel Tips</li>
+            </ul>
+        </div>
+        <div>
+            <ul><span class="bold"> Support </span> 
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </footer>
+
+    
+        <script src="js/jquery.js"></script>
+        <script src="js/interaction.js"></script>
+
+        <!--Bootstrap Javascript Code -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/0acf570bd9.js"></script>
+</body>
+</body>
+
+
+
+</html>
+

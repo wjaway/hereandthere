@@ -1,0 +1,319 @@
+h1 {
+     font-family: abel, sans-serif;
+}
+
+
+ul {
+     padding: 0;
+}
+li {
+    list-style: none;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+color: white;
+}
+
+a:hover {
+color: #007BFE;
+}
+
+.icon {
+    padding-right: 10px
+}
+
+.navbar {
+    background-color: #FF932A;
+    color: white;
+}
+
+.navbar-nav {
+    padding-right: 10px;
+}
+
+.navbar-brand {
+    padding-bottom: 0px;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.carousel img{
+    width: 100%;
+}
+
+
+/*filters*/
+.list-group {
+    flex-direction: row;
+    font-size: .9em;
+}
+
+.list-group-item {
+    text-align: center;
+}
+
+.list-group-item.active {
+    color: white;
+    background-color: #FF932A;
+    border: 1px solid rgba(0,0,0,.125);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+} 
+
+.list-group-item div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+
+/*hoverbutton*/
+.button {
+  border-radius: 4px;
+  background-color: #FF932A;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*nav dropdown*/
+.dropdown-item {
+   color: #2A2A2A; 
+}
+
+.dropdown-item:hover {
+    color: #007BFE;
+}
+
+.feed {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    padding: 20px 50px;
+}
+
+.post ul li{
+    padding-bottom: 4px;
+}
+
+.postavatar {
+    padding-right: 20px;
+}
+
+.postimg {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.post i {
+    font-size: 1.5em; 
+}
+
+.postquote{
+    font-style: italic;
+    text-align: center;
+}
+
+.postbold {
+    font-weight: 700;
+}
+
+.postcomments{
+    color: #9B9B9B;
+}
+
+.posttime {
+    color: #9B9B9B;
+    font-size: .9em;
+}
+
+
+.line {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.line-spacebetween {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FF932A;
+    color: white;
+    padding-top: 10px;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+.special {
+    background-color: #007BFE;
+}
+
+/*nav bar resizing*/
+
+@media all and (max-width: 1102px) and (min-width: 992px) { 
+    nav {
+        font-size: .8em;
+        }
+    }
+@media (max-width: 1199px) {
+     #posts {
+        display: flex;
+        flex-direction: row; 
+    }
+}
+
+@media (max-width: 767px) { /* screen size until 500px */
+    nav {
+        font-size: 1em; /* 0.8x default size */
+        }
+    }
+    footer {
+        font-size: .8em;
+    }
+    
+
+@media all and (max-width: 575px) {
+    
+    .navbar {
+       font-size: .7rem;
+    }
+    .carousel {
+        display: none;
+    }
+    
+    footer {
+        display: none;
+    }
+    #filters {
+        display: none; 
+    }
+    
+    .feed {
+        flex-direction: column; 
+}
+    h1 {
+        font-size: 1.6em;
+    }
+    
+    .navbar-toggler {
+        font-size: 1rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    p {
+        font-size: .8rem;
+    }
+    .post i {
+        font-size: 1.2em;
+    }
+    
+    .postquote {
+        font-size: .9em;
+    }
+    
+    .post {
+        font-size: .7em;
+    }
+    
+    .postavatar{
+        width: 80px;
+        height: auto;
+    }
+    
+    .more {
+        width: 12px;
+        height: auto;
+    }
+    
+    .button {
+      border-radius: 4px;
+      background-color: #FF932A;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 12px;
+      padding: 6px;
+      width: 100px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+}
+
+
+    .button:hover span {
+      padding-right: 15px;
+    }
+    
+    
+
+  
+}

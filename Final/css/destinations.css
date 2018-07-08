@@ -1,0 +1,341 @@
+h1 {
+     font-family: abel, sans-serif;
+}
+
+h3 {
+    font-size: .9rem;
+}
+
+h4 {
+    font-size: .95em;
+    margin: 0;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+ul {
+     padding: 0;
+}
+li {
+    list-style: none;
+}
+
+p {
+    margin-bottom: 0;
+    font-size: .6em;
+}
+
+a {
+color: white;
+}
+
+a:hover {
+color: #007BFE;
+}
+
+.fa {
+    padding-right: 10px
+}
+
+.navbar {
+    background-color: #FF932A;
+    color: white;
+}
+
+.navbar-nav {
+    padding-right: 10px;
+}
+
+.navbar-brand {
+    padding-bottom: 0px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+
+/*filters*/
+.list-group {
+    flex-direction: row;
+    font-size: .9em;
+}
+
+.list-group-item {
+    text-align: center;
+}
+
+.list-group-item.active {
+    color: white;
+    background-color: #FF932A;
+    border: 1px solid rgba(0,0,0,.125);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+} 
+
+/*hoverbutton*/
+.button {
+  border-radius: 4px;
+  background-color: #FF932A;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*nav dropdown*/
+.dropdown-item {
+   color: #2A2A2A; 
+}
+
+.dropdown-item:hover {
+    color: #007BFE;
+}
+
+.feed {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.post-city {
+    width: 100%;
+}
+
+.post li {
+    padding: 10px 0; 
+}
+
+
+.postavatar{
+    width: 30px;
+    height: 30px;
+    
+    margin-right: 10px;
+    }
+
+.rating {
+    margin: 0;
+    font-size: .8em;
+}
+
+.rating li{
+    padding: 0 5px 0 0;
+    font-size: .8em;
+}
+
+
+.line {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.line-spacebetween {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FF932A;
+    color: white;
+    padding-top: 10px;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+
+
+
+/*nav bar resizing*/
+
+@media all and (max-width: 1102px) and (min-width: 992px) { 
+    nav {
+        font-size: .8em;
+        }
+    }
+
+@media all and (max-width: 1246px) and (min-width: 992px) { 
+    .country {
+        font-size: .65em;
+        }
+    h4 {
+        font-size: .8em;
+    }
+    .rating {
+        font-size: .7em;
+    }
+    }
+@media (max-width: 1199px) {
+     #posts {
+        display: flex;
+        flex-direction: row; 
+    }
+}
+
+@media (max-width: 767px) { /* screen size until 500px */
+    nav {
+        font-size: 1em; /* 0.8x default size */
+        }
+    }
+    footer {
+        font-size: .8em;
+    }
+    
+
+@media all and (max-width: 575px) {
+    
+    .navbar {
+       font-size: .7rem;
+    }
+    .carousel {
+        display: none;
+    }
+    
+    footer {
+        display: none;
+    }
+    #filters {
+        display: none; 
+    }
+    
+    .feed {
+        flex-direction: column; 
+}
+    h1 {
+        font-size: 1.6em;
+    }
+    
+    .navbar-toggler {
+        font-size: 1rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    p {
+        font-size: .9rem;
+    }
+    .post i {
+        font-size: 1.2em;
+    }
+    
+    .postquote {
+        font-size: .7em;
+    }
+    
+    .post {
+        font-size: .8em;
+    }
+    
+    .postavatar{
+        width: 34px;
+        height: auto;
+        padding-right: 4px;
+    }
+    
+    .rating {
+        margin: 0;
+        font-size: 1em;
+}
+    
+    h4 {
+        font-size: 1.5em;
+        margin: 0;
+        text-decoration: underline;
+        font-weight: 700;
+    }
+    
+    h3 {
+        font-size: 1.4em;
+    }
+    
+    .more {
+        width: 12px;
+        height: auto;
+    }
+    
+    .button {
+      border-radius: 4px;
+      background-color: #FF932A;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 12px;
+      padding: 6px;
+      width: 100px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+}
+
+
+    .button:hover span {
+      padding-right: 15px;
+    }
+    
+    .mostpopular {
+        display: none;
+    }
+}

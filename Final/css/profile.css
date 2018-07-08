@@ -1,0 +1,437 @@
+h1 {
+     font-family: abel, sans-serif;
+}
+
+
+body {
+    width: 100%;
+}
+
+ul {
+     padding: 0;
+}
+li {
+    list-style: none;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+color: white;
+}
+
+a:hover {
+color: #007BFE;
+}
+
+
+.navbar {
+    background-color: #FF932A;
+    color: white;
+}
+
+.navbar-nav {
+    padding-right: 10px;
+}
+
+.navbar-brand {
+    padding-bottom: 0px;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.banner  {
+    width: 100%;
+}
+
+.rating {
+    margin: 0;
+}
+
+.rating li{
+    padding-right: 10px;
+}
+
+
+.button {
+  border-radius: 4px;
+  background-color: #FF932A;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+  padding: 4px;
+  width: 80px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.follow {
+    background-color: white;
+    color: #FF932A;
+    border-color: #FF932A;
+}
+
+.message {
+    color: black;
+    width: 240px;
+    padding; 3px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+
+.more {
+    color: #9B9B9B;
+    width: 30px;
+    background: #FFFFFF;
+    border: 1px solid #9B9B9B;
+    border-radius: 8px;
+}
+
+
+
+
+.feed {
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.post {
+    padding: 20px 50px;
+}
+
+.post ul li{
+    padding-bottom: 4px;
+}
+
+.postavatar {
+    padding-right: 10px;
+    width: 80px;
+}
+
+.postimg {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.post i {
+    font-size: 1.5em; 
+}
+
+.postquote{
+    font-style: italic;
+    text-align: center;
+}
+
+.post-notes{
+    padding-bottom: 16px;
+}
+
+.postbold {
+    font-weight: 700;
+}
+
+.postcomments{
+    color: #9B9B9B;
+}
+
+.posttime {
+    color: #9B9B9B;
+    font-size: .9em;
+}
+
+.comment {
+    color: #4A4A4A;
+} 
+
+.following ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.list-spacing {
+    padding-right: 40px;
+}
+
+.filters {
+    padding: 0 50px;
+}
+
+
+.profile {
+    padding: 20px 50px;
+}
+
+.profile h3{
+    padding-right: 20px;
+}
+
+.avatar {
+    padding-right: 2em;
+}
+
+
+.line {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.line-spacebetween {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-align {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rec {
+    padding: 0 50px 30px 50px;
+    width: 100%;
+}
+
+.rec ul {
+   font-size: .9em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FF932A;
+    color: white;
+    padding-top: 10px;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.blue {
+    color: #007BFE;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+.icon {
+    padding-right: 10px
+}
+
+
+/*nav bar resizing*/
+
+@media all and (max-width: 1102px) and (min-width: 992px) { 
+    nav {
+        font-size: .8em;
+        }
+    }
+@media (max-width: 1199px) {
+     #posts {
+        display: flex;
+        flex-direction: row; 
+    }
+    
+    h3 {
+        font-size: 1.25em; 
+    }
+    .profile p {
+        font-size: .7em;
+    }
+    
+    .message {
+        color: black;
+        width: 160px;
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 8px;
+}
+    spacing-bottom {
+        padding-bottom: 20px;
+    }
+    
+    
+    .postavatar {
+        width: 60px;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+}
+@media (max-width: 952px) and (min-width: 768px) { 
+    .hidebottom {
+        display: none;
+    }
+    }
+
+
+@media (max-width: 767px) { /* screen size until 500px */
+    nav {
+        font-size: 1em; /* 0.8x default size */
+        }
+    
+    .rec {
+        display: none;
+    }
+    
+    .spacing-bottom img {
+        width: 20px;
+    }
+    
+    .rating li{
+        padding-right: 4px;
+}
+     .postavatar {
+        width: 80px;
+        height: auto;
+    }
+    
+    
+    footer {
+        font-size: .8em;
+    }
+    
+    
+    
+    }
+
+
+@media (max-width: 575px) {
+    .navbar-brand {
+       justify-content: center;
+    }
+    .carousel {
+        display: none;
+    }
+    
+    footer {
+        display: none;
+    }
+    
+    
+    .avatar {
+        width: 80px;
+        height: auto;
+        padding-right: 10px;
+    }
+    
+    .postavatar {
+        width: 40px;
+        height: auto;
+        padding-right: 10px;
+    }
+     .message {
+        color: black;
+        width: 110px;
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 8px;
+        margin: 0;
+}
+    #dots {
+        width: 12px;
+        height: auto;
+    }
+    
+    .filters {
+        font-size: .7em;
+        justify-content: space-between;
+        padding: 0 30px 10px 30px;
+        
+    }
+    
+    
+    h3 {
+        font-size: .9em; 
+        margin: 0;
+    }
+    
+    h4 {
+        font-size: 1.2rem; 
+        margin: 0;
+    }
+    
+    .profile {
+        padding: 10px 0;
+    }
+    
+    .profile p {
+        font-size: .2em;
+    }
+    
+    .button {
+        font-size: 10px;
+        padding: 2px;
+        
+    }
+    
+    .more {
+        font-size: 10px;
+        width: 20px;
+}
+   
+    .follow {
+        width: 60px;
+    }
+    
+
+    .profile-align {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+    
+    .post {
+        font-size: .7em;
+        padding: 0 30px 10px 30px;
+    }
+    .following {
+        margin: 10px 0 0 0;
+    }
+    .following p {
+        padding-left: 4px;
+    }
+    .following ul li{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: center;
+    
+}
+
+}
